@@ -1,5 +1,5 @@
 // import app pages
-import Home from '@/app/pages/Home'
+// import Home from '@/app/pages/Home'
 
 // import admin page components
 import Admin from '@/admin/pages/Admin'
@@ -18,8 +18,9 @@ import ContentsEdit from '@/admin/pages/content/contents/ContentsEdit'
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    // name: 'Home',
+    // component: Home
+    redirect: '/login'
   },
   {
     path: '/login',
