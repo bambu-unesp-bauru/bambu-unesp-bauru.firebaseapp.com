@@ -11,19 +11,19 @@
           <div class="container has-text-centered">
             <div class="titleAdmin">
               <h1 class="title">
-                Welcome to Tamiat CMS
+                Bem vindo!
               </h1>
             </div>
             <h2 class="subtitle">
               <a href="https://github.com/tamiat/tamiat" target="_blank">
-                <span style="font-size: 25px;font-weight: bold">GitHub</span>
+                <span>GitHub</span>
               </a>
             </h2>
             <router-link to="/">
               <!-- <img src="/static/img/logo.png" alt="Tamiat CMS logo"> -->
-              <div>
+              <!-- <div>
                 <object type="image/svg+xml" data="static/img/tamiat-logo-icon-color.svg" style="pointer-events: none; height: 7rem"></object>
-              </div>
+              </div> -->
             </router-link>
             <p>Version v0.3.0</p>
           </div>
@@ -43,6 +43,11 @@ import 'firebase/auth'
 
 export default {
   name: 'admin',
+  data () {
+    return {
+      currentUser: firebase.auth().currentUser
+    }
+  },
   components: {
     'navbar': Navbar,
     'sidebar': Sidebar

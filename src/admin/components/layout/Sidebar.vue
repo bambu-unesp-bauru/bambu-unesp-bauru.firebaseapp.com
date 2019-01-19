@@ -23,13 +23,13 @@
           </router-link>
         </ul>
       </router-link>
-      <a target="_blank" :href="helpbtn.path" class="menu-item">
+      <!-- <a target="_blank" :href="helpbtn.path" class="menu-item">
 
         <div class="icon is-medium">
           <i :class="['fa', helpbtn.icon]"></i>
         </div>
 
-        <div>{{ helpbtn.name }}</div>
+        <div>{{ helpbtn.name }}</div> -->
       </a>
 
     </ul>
@@ -82,11 +82,11 @@ export default {
           icon: 'fa-gear'
         }
       ],
-      helpbtn: {
-        name: 'Help',
-        path: 'https://github.com/tamiat/tamiat/blob/master/README.md',
-        icon: 'fa-question'
-      }
+      // helpbtn: {
+      //   name: 'Help',
+      //   path: 'https://github.com/tamiat/tamiat/blob/master/README.md',
+      //   icon: 'fa-question'
+      // }
     }
   }
 }

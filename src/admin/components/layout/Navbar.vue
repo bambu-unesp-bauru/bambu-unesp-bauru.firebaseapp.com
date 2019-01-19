@@ -7,7 +7,7 @@
     </transition>
 
     <!-- the navbar brand -->
-    <div class="navbar-brand">
+    <!-- <div class="navbar-brand">
       <router-link class="navbar-item logo" to="/admin">
         <img :src="`${baseUrl}static/img/tamiat-admin-logo-1.png`" alt="logo">
       </router-link>
@@ -16,7 +16,7 @@
         <span></span>
         <span></span>
       </div>
-    </div>
+    </div> -->
 
     <!-- the navbar right menu -->
     <div class="navbar-menu" id="navbar" :class="{'is-active': mobileMenuIsActive}">
@@ -83,10 +83,10 @@ $navbarColor: #aaaaaa;
 
 #navbar {
   position: fixed;
-  z-index: 1024;
+  // z-index: 1024;
   width: 100%;
-  height: 100px;
-  background-color: $navbarBg;
+  // height: 100px;
+  // background-color: $navbarBg;
 
   .logo {
     z-index: 9999;

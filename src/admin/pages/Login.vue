@@ -10,9 +10,13 @@
 
         <!-- tamiat CMS logo -->
         <div class="columns is-flex is-centered is-mobile">
-          <figure class="column is-half">
-            <router-link to="/"><img :src="`${baseUrl}static/img/logo.png`" alt="Tamiat logo"></router-link>
-          </figure>
+          <article class="tile is-child notification" >
+            <p class="title">Admin do <a href=˜https://bambu-unesp-bauru.github.io˜ target="_blank">bambu-unesp-bauru.github.io</a></p>
+            <p class="subtitle">Inclua seu email e senha para acessar.</p>
+          </article>
+          <!-- <figure class="column is-half"> -->
+            <!-- <router-link to="/"><img :src="`${baseUrl}static/img/logo.png`" alt="Tamiat logo"></router-link> -->
+          <!-- </figure> -->
         </div>
 
         <!-- email -->
@@ -71,6 +75,9 @@ export default {
 </script>
 
 <style>
+.notification{ 
+  background-color: unset
+}
 .is-vertical-aligned {
   align-items: center;
 }
